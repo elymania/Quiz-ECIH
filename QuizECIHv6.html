@@ -200,6 +200,7 @@
   }
 
   /* Responsive Styles */
+  /* Base font sizes for better scaling on mobile */
   body {
     font-size: 18px;
     line-height: 1.5;
@@ -215,9 +216,33 @@
     height: auto;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     body {
       font-size: 20px;
+    }
+
+    header h1 {
+      font-size: 1.3em;
+    }
+
+    main {
+      padding: 15px;
+    }
+
+    .arrow-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
       padding: 5px;
     }
 
@@ -237,36 +262,8 @@
     }
 
     .arrow-btn {
-      font-size: 14px;
-      padding: 4px 8px;
-    }
-
-    #top-bar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .btn {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 20px;
-    }
-
-    body {
-      font-size: 16px;
-    }
-
-    .arrow-btn {
-      padding: 3px 6px;
-    }
-
-    header h1 {
-      font-size: 1.1em;
+      font-size: 12px;
+      padding: 5px 10px;
     }
 
     .btn {
@@ -274,11 +271,47 @@
       padding: 6px 12px;
     }
 
+    #top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .about-btn {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+      padding: 3px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    header h1 {
+      font-size: 1.1em;
+    }
+
+    .arrow-btn {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    .btn {
+      font-size: 10px;
+      padding: 5px 10px;
+    }
+
     main {
-      padding: 8px;
+      padding: 5px;
     }
   }
 </style>
+
 
 </head>
 <body onkeydown="blockShortcuts(event)">
