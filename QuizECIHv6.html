@@ -218,10 +218,64 @@
   @media (max-width: 768px) {
     body {
       font-size: 20px;
+      padding: 5px;
     }
 
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+
+    header h1 {
+      font-size: 1.2em;
+    }
+
+    main {
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .arrow-btn {
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+
+    #top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
     h1 {
-      font-size: 26px;
+      font-size: 20px;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .arrow-btn {
+      padding: 3px 6px;
+    }
+
+    header h1 {
+      font-size: 1.1em;
+    }
+
+    .btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+
+    main {
+      padding: 8px;
     }
   }
 </style>
